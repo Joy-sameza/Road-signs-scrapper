@@ -18,3 +18,12 @@ jobs:
 
       - run: npm start
         name: Start the scrapping process
+
+      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+
+      # upload scrapped data
+      - uses: actions/upload-artifact@v3
+        name: Upload scrapped data
+        with:
+          name: scrapped-data
+          path: road_signs.json
