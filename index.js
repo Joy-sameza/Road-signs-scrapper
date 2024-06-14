@@ -1,6 +1,3 @@
-const axios = require("axios");
-const cheerio = require("cheerio");
-const pretty = require("pretty");
 const fs = require("fs");
 
 const x = require("./scrape");
